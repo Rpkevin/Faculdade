@@ -1,4 +1,3 @@
-# F. p/ cadastrar um colaborador.!
 def cadastrar_colaborador(id):
     global id_global, lista_colaboradores
     id_global += 1
@@ -18,7 +17,6 @@ def cadastrar_colaborador(id):
     print("Colaborador cadastrado com sucesso!")
     print("---------------------------------------------")
 
-# F. p/ consultar os colaboradores por ID.!
 def consultar_colaborador_por_id():
     print("-------CONSULTA POR COLABORADOR POR ID-------")
     id_consulta = int(input("Digite o ID do colaborador: "))
@@ -32,7 +30,6 @@ def consultar_colaborador_por_id():
         print("Colaborador não encontrado.")
     print("--------------------------------------------")
 
-# F. p/ consultar colaborador(es) por setor.!
 def consultar_colaborador_por_setor():
     print("-----CONSULTA POR COLABORADOR(ES) POR SETOR-----")
     setor_consulta = input("Digite o setor desejado: ")
@@ -45,7 +42,6 @@ def consultar_colaborador_por_setor():
         print("Nenhum colaborador encontrado neste setor.")
     print("----------------------------------------------")
 
-# F. remover um colaborador.!
 def remover_colaborador():
     id_remover = int(input("Digite o ID do colaborador a ser removido: "))
     removido = False
@@ -58,27 +54,20 @@ def remover_colaborador():
     if not removido:
         print("Colaborador não encontrado.")
 
-# lista vazia p/ armazenar os colaboradores.
 lista_colaboradores = []
 
-# variável global para o ID.
 id_global = 0
 
-# contador de funcionários cadastrados.
 funcionarios_cadastrados = 0
 
-# msg de boas-vindas.
 print("Bem-vindo ao controle de colaborades do Kevin G. Porto")
 
-# loop principal do programa!
 while funcionarios_cadastrados < 3:
     cadastrar_colaborador(id_global)
     funcionarios_cadastrados += 1
 
-# resetar o contador após cadastrar 3 colaboradores
 funcionarios_cadastrados = 0
 
-# loop principal do programa!
 while True:
     print("------------MENU PRINCIPAL-----------")
     print('Bem-vindo ao controle de colaborades do Kevin G. Porto')
